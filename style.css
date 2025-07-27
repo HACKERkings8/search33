@@ -1,0 +1,112 @@
+/* الألوان المستخدمة مستوحاة من الفن الإسلامي */
+:root {
+    --islamic-gold: #c5a35a; /* ذهبي فاتح */
+    --islamic-teal: #008080; /* تركوازي غامق */
+    --islamic-cream: #f5f5dc; /* كريمي */
+    --islamic-dark-blue: #2c3e50; /* أزرق غامق */
+    --islamic-border-color: #8b6b2e; /* لون حدود ذهبي أغمق */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Amiri', serif;
+    background-image: url('123.jpg'); /* استبدل هذا بمسار صورتك الـ 4K */
+    background-size: cover;          /* الأفضل لتغطية الشاشة بالكامل بدون تشويه الأبعاد */
+    background-position: center center; /* لتوسيط الصورة */
+    background-repeat: no-repeat;    /* لعدم تكرار الصورة */
+    background-attachment: fixed;    /* لجعل الصورة ثابتة أثناء التمرير */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .islamic-search-container {
+    display: flex;
+    border: 2px solid var(--islamic-border-color);
+    border-radius: 15px; /* حواف مستديرة */
+    overflow: hidden; /* لإخفاء أي تجاوزات */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(
+      to right,
+      var(--islamic-cream),
+      var(--islamic-cream) 50%,
+      var(--islamic-teal)
+    ); /* تدرج لوني */
+    padding: 5px;
+    max-width: 400px;
+    margin: 50px auto; /* توسيط العنصر */
+    position: relative;
+    font-family: 'Amiri', serif; /* استخدم خط عربي جميل */
+  }
+  
+  /* إضافة زخرفة بسيطة باستخدام :before و :after */
+  .islamic-search-container::before,
+  .islamic-search-container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--islamic-gold);
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  
+  .islamic-search-container::before {
+    top: -10px;
+    left: -10px;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .islamic-search-container::after {
+    bottom: -10px;
+    right: -10px;
+    border-left: none;
+    border-top: none;
+  }
+  
+  #islamic-search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 12px 15px;
+    font-size: 1.1em;
+    outline: none;
+    background-color: var(--islamic-cream);
+    color: var(--islamic-dark-blue);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    direction: rtl; /* لجعل النص يبدأ من اليمين ليتناسب مع اللغة العربية */
+    text-align: right;
+  }
+  
+  #islamic-search-input::placeholder {
+    color: rgba(44, 62, 80, 0.7);
+  }
+  
+  #islamic-search-button {
+    background-color: var(--islamic-teal);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #islamic-search-button:hover {
+    background-color: var(--islamic-dark-blue);
+  }
+  
+  #islamic-search-button img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%); /* لجعل الأيقونة بيضاء */
+  }
+  
+  /* يمكنك إضافة خطوط عربية من Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
