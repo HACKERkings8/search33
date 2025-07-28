@@ -14,14 +14,6 @@ Welcome to **My Interactive Web Project**! This is a simple yet effective web ap
 * **Responsive Design:** Optimized for various screen sizes, ensuring a great experience on both mobile and desktop devices. 📱💻
 
 ---
-## 📸 Project Preview
-
-Here's a quick look at the application in action:
-
-![Preview of the application interface](554.png "Main App View")
-*A screenshot showing the main features of the web application.*
-
----
 ## 🛠️ Technologies Used
 
 * **HTML5:** For the core structure of the web page.
