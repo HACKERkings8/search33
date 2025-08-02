@@ -34,7 +34,7 @@ Welcome to **My Interactive Web Project**! This is a simple yet effective web ap
 ## 🔗 Live Demo
 
 Experience the app live:
-[https://HACKERkings8.github.io/search33/](https://HACKERkings8.github.io/search33/)
+[https://islamic-search33.netlify.app/](https://islamic-search33.netlify.app/)
 
 ---
 
